@@ -1,6 +1,6 @@
 module.exports = {
 	entry: {
-		main: './src/index.js'
+		main: './src/index.js',
 	},
 	module: {
 		rules: [
@@ -13,7 +13,7 @@ module.exports = {
 				use: ['html-loader'],
 			},
 			{
-				test: /\.(svg|png|jpg|gif)$/,
+				test: /\.(svg|png|jpg|gif|jpeg)$/,
 				use: {
 					loader: 'file-loader',
 					options: {
@@ -26,6 +26,6 @@ module.exports = {
 	},
 	devServer: {
 		historyApiFallback: true,
-	  },
-	  node: {fs: 'empty'}
+	},
+	node: { fs: 'empty' },
 };
