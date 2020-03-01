@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function WelcomePage() {
 	return (
@@ -13,9 +14,9 @@ export default function WelcomePage() {
 				<div className='newUser'>
 					Create an Account to become our Community Member{' '}
 				</div>
-				<a href='#'>
-					<div id='signup_main'>Create Account</div>
-				</a>
+				<Link to='/login'>
+					<div id='signup_main'>Sign In</div>
+				</Link>
 			</div>
 		</div>
 	);
